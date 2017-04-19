@@ -9,7 +9,7 @@
 <body>
     <script>
         navigator.serviceWorker.register(
-        '/test_serviceworker/appCache.js'
+        '/test_serviceworker/serviceWorkerInit.js'
         ).then(function(registration) {
             // при удачной регистрации имеем объект типа ServiceWorkerRegistration  
             console.log('ServiceWorker registration', registration);
@@ -19,6 +19,5 @@
             throw new Error('ServiceWorker error: ' + err);
         });
     </script>
-    <script src="common.js"></script>
 </body>
 </html>
